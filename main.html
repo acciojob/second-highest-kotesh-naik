@@ -10,10 +10,10 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			if (arr.length<2) return -Infinity;
+			if (arr.length < 2) return -Infinity;
 			let first = -Infinity;
 			let second= -Infinity;
-			arr.forEach((item.idx) =>{
+			arr.forEach(item.idx) =>{
 				if(item > first ){
 					second = first;
 					first = item;
@@ -21,7 +21,7 @@
 				else if(item > second && item != first){
 					second = item;
 				}
-			})
+			}
 			return second;
 		}
 
